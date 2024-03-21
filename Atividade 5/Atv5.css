@@ -1,0 +1,97 @@
+div{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen
+and (min-device-width: 0px)
+and (max-device-width: 420px){
+    div{
+        background-color: #403939;
+    }
+
+    div h2::before{
+        content: "CINZA";
+        color: #ffffff;
+    }
+}
+
+@media only screen
+and (min-device-width: 421px)
+and (max-device-width: 768px){
+    div{
+        background-color: #bc5214;
+    }
+
+    div h2::before{
+        content: "LARANJA";
+        color: #ffffff;
+    }
+}
+
+@media only screen
+and (min-device-width: 769px)
+and (max-device-width: 1024px){
+    div{
+        background-color: #ce1295;
+    }
+
+    div h2::before{
+        content: "ROSA";
+        color: #ffffff;
+    }
+}
+
+@media only screen
+and (min-device-width: 1025px)
+and (max-device-width: 1080px){
+    div{
+        background-color: #dd1010;
+    }
+
+    div h2::before{
+        content: "VERMELHO";
+        color: #ffffff;
+    }
+}
+
+@media only screen
+and (min-device-width: 1081px)
+and (max-device-width: 1366px){
+    div{
+        background-color: #5d117ee2;
+    }
+
+    div h2::before{
+        content: "ROXO";
+        color: #ffffff;
+    }
+}
+
+@media only screen
+and (min-device-width: 1367px)
+and (max-device-width: 1920px){
+    div{
+        background-color: #dbd81ae2;
+    }
+
+    div h2::before{
+        content: "AMARELO";
+        color: #ffffff;
+    }
+}
+
+@media only screen
+and (min-device-width: 1921px){
+    div{
+        background-color: #087c4ee2;
+    }
+
+    div h2::before{
+        content: "VERDE";
+        color: #ffffff;
+    }
+}
