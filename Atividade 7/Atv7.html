@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PWEB - Atividade 7">
+    <meta name="keywords" content="Jogo Pedra, Papel e Tesoura">
+    <meta name="author" content="Franciele Rodrigues">
+    <title>PWEB - Atividade 7 - Pedra, Papel e Tesoura</title>
+</head>
+<body>
+    <script>
+        var num_jogador = 1;
+        var pedra = 1;
+        var papel = 2;
+        var tesoura = 3;
+
+        while (num_jogador != 0){
+            alert ("JOGO: PEDRA, PAPEL E TESOURA: \n1 - PEDRA \n2 - PAPEL \n3 - TESOURA \n0 - SAIR");
+
+            var num_jogador = prompt("Insira o número escolhido aqui: ");
+            
+            var aleatorio = Math.floor((Math.random()*3)+1);
+
+            if(num_jogador == aleatorio){
+                alert("Houve um empate. Tente novamente!");
+            }else if(num_jogador == pedra && aleatorio == papel){
+                alert("Você escolheu: Pedra\nA opção gerada foi: Papel\nVocê perdeu! Tente novamente!");
+            }else if(num_jogador == papel && aleatorio == pedra){
+                alert("Você escolheu: Papel\nA opção gerada foi: Pedra\nParabéns! Você ganhou!!");
+            }else if(num_jogador == papel && aleatorio == tesoura){
+                alert("Você escolheu: Papel\nA opção gerada foi: Tesoura\nVocê perdeu! Tente novamente!");
+            }else if(num_jogador == tesoura && aleatorio == papel){
+                alert("Você escolheu: Tesoura\nA opção gerada foi: Papel\nParabéns! Você ganhou!!");
+            }else if(num_jogador == tesoura && aleatorio == pedra){
+                alert("Você escolheu: Tesoura\nA opção gerada foi: Pedra\nVocê perdeu! Tente novamente!");
+            }else if(num_jogador == pedra && aleatorio == tesoura){
+                alert("Você escolheu: Pedra\nA opção gerada foi: Tesoura\nParabéns! Você ganhou!!");
+            }else if(num_jogador > 3){
+                alert("Opção inválida. Tente novamente!");
+            }
+        }
+    </script>
+</body>
+</html>
