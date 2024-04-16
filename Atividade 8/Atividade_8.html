@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PWEB - Atividade 8">
+    <meta name="author" content="Franciele Rodrigues">
+    <title>Atividade 8 - Pesquisa</title>
+    <link rel="stylesheet" href="Atv8.css">
+    <script src="Atv8.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Compartilhe sua opinião!</h1>
+        <h2>Colabore com nossa pesquisa! Avalie o filme que acabou de assistir!</h2>
+    </header>
+
+    <main>
+        <div class="container-box">
+            <div class="pesquisa">
+                <h3>Pesquisa</h3>
+                <label><strong>Informe sua idade:</strong></label>
+                <input type="text" id="idade" placeholder="Sua idade">
+
+                <p><strong>Informe seu sexo de acordo com as opções abaixo: </strong><br>F-feminino <br>M-masculino</p>
+                <label><strong>Sexo:</strong></label>
+                <input type="text" id="sexo" placeholder="Seu sexo">
+
+                <p><strong>Informe sua nota de acordo com as opções abaixo:</strong> 
+                    <br> 1 - Péssimo.
+                    <br> 2 - Regular.
+                    <br> 3 - Bom.
+                    <br> 4 - Ótimo.</p>
+                <label><strong>Sua nota:</strong></label>
+                <input type="text" id="nota" placeholder="Sua nota">
+
+                <button onclick="pesquisa()">Enviar Respostas</button>
+                
+                <p><label><strong>Número de Respostas: </strong></label>
+                <input type="text" id="contador" placeholder="0"></p>
+
+                <button onclick="finalizar()">Gerar Resultados</button>
+            </div>
+
+            <div class="resultado">
+                <h3>Resultados</h3>
+                <p><label><strong>Média da Idades das Clientes:</strong></label>
+                <input type="text" id="media_idade"></p>
+
+                <p><label><strong>Idade da pessoa mais velha:</strong></label>
+                <input type="text" id="maior_idade"></p>
+
+                <p><label><strong>Idade da pessoa mais nova:</strong></label>
+                <input type="text" id="menor_idade"></p>
+
+                <p><label><strong>Número de avaliações "Péssimo":</strong></label>
+                <input type="text" id="qtde_pessimo"></p>
+
+                <p><label><strong>Porcentagem de avaliações "Ótimo" e "Bom":</strong></label>
+                <input type="text" id="porcent_otimo_bom"></p>
+
+                <p><label><strong>Quantidade de mulheres:</strong></label>
+                <input type="text" id="qtde_mulheres"></p>
+
+                <p><label><strong>Quantidade de homens:</strong></label>
+                <input type="text" id="qtde_homens"></p>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer div class="rodape">
+        <p>Atividade 08 | Programação WEB | Análise e Desenvolvimento de Sistemas | FATEC SOROCABA</p>
+        <p>&copy; 2024 Franciele Rodrigues. Todos os direitos reservados.</p>
+        <a href="https://github.com/FrancieleSRodrigues"><img src="github.jpg" alt="ícone de acesso GitHub"></a>           
+        <a href="https://www.linkedin.com/in/franciele-srod/"><img src="linkedin.png" alt="ícone de acesso Linkedin"></a>           
+    </footer>
+</body>
+</html>
