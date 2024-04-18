@@ -1,0 +1,30 @@
+body{
+    background-color: #ffffff;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    background-color: #e7c2de;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+}
+
+footer img{
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
