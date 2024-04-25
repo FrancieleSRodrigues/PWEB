@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franciele Rodrigues">
+    <title>Atividade 11 - Criando objetos</title>
+</head>
+<body>
+    <script>
+        var v_matricula = prompt("Insira a matrícula do funcionário: ");
+        var v_nome = prompt("Insira o nome do funcionário: ");
+        var v_funcao = prompt("Insira a função do funcionário: ");
+
+        //1. Forma: NEW
+        var funcionario1 = new Object();
+        funcionario1.matricula = v_matricula
+        funcionario1.nome = v_nome;
+        funcionario1.funcao = v_funcao;
+
+        //alert("matricula=" + aluno1.ra + "nome=" + aluno1.nome);
+        alert(`Matricula: ${funcionario1.matricula} \nNome: ${funcionario1.nome} \nFunção: ${funcionario1.funcao}`);
+
+        //2. Forma Literal
+        var funcionario1 = {
+            matricula: v_matricula,
+            nome: v_nome,
+            funcao: v_funcao
+        };
+        alert("Matricula: " + funcionario1.matricula + 
+            "\nNome: " + funcionario1.nome + 
+            "\nFunção: " + funcionario1.funcao);
+
+        //3. Funcao Construtora sem parâmetros
+        function Funcionario(){
+            var matricula;
+            var nome;
+            var funcao;
+            this.setMatricula = function(value){
+                this.matricula = value;
+            }
+            this.getmatricula = function(){
+                return this.matricula;
+            }
+            this.setNome = function(value){
+                this.nome = value;
+            }
+            this.getNome = function(){
+                return this.nome;
+            }
+            this.setFuncao = function(value){
+                this.funcao = value;
+            }
+            this.getFuncao = function(){
+                return this.funcao;
+            }
+        }
+
+        var funcionario1 = new Funcionario();
+        funcionario1.setMatricula(v_matricula);
+        funcionario1.setNome(v_nome);
+        funcionario1.setFuncao(v_funcao);
+        alert("Matricula: " + funcionario1.getmatricula() + 
+            "\nNome: " + funcionario1.getNome() +
+            "\nFunção: " + funcionario1.getFuncao());
+    </script>
+</body>
+</html>
