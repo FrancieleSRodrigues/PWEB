@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Franciele Rodrigues">
+    <title>Atividade 13 - Janela</title>
+</head>
+<body>
+
+    <div onmousedown="Quebrar(this)" onmousemove="Abrir(this)" onmouseout="Fechar(this)">
+		<h1>Janela Fechada</h1>
+		<img src="janelafechada.png" id="janela">
+	</div>
+
+	<script>
+		var imagemJanela = document.getElementById("janela");
+
+		function Quebrar(obj) {
+			obj.querySelector("h1").textContent = "Janela Quebrada";
+			imagemJanela.src = "janelaquebra.png";
+		}
+
+		function Abrir(obj) {
+			obj.querySelector("h1").textContent = "Janela Aberta";
+			imagemJanela.src = "janelaaberta.png";
+		}
+
+		function Fechar(obj) {
+			obj.querySelector("h1").textContent = "Janela Fechada";
+			imagemJanela.src = "janelafechada.png";
+		}
+	</script>
+</body>
+</html>
