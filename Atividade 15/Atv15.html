@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Franciele Rodrigues">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15</title>
+    <script src="Atv15.js"></script>
+    <link rel="stylesheet" href="Atv15.css">
+</head>
+<body>
+    <h1>Formulário Principal</h1>
+    <form method="POST" name="formulario1" id="formulario1" onsubmit="return validar()">
+        
+        <div id="form" width=200 heigth=200>
+            <p><strong>Nome:</strong></p>
+            <input name="Nome" type="text" id="nome" size="52" maxlength="150">
+            <br>
+            <br>
+            <p><strong>E-mail:</strong></p>
+            <input name="Email" type="email" id="email" size="52" maxlength="150">
+            <br>
+            <br>
+            <p><strong>Comentário:</strong></p> 
+            <textarea name="Comentario" id="comentario" cols="52" minlength="20" maxlength="150" rows="4"></textarea>
+            <br>
+            <br>
+            <h3>Pesquisa:</h3>
+            <div id="pesquisa">
+                Primeira vez nesta página??
+                <br>
+                <br>
+                <input name="Sim" type="radio" id="sim" onclick="return verificaRadio(3)">Sim
+                <input name="Não" type="radio" id="nao" onclick="return verificaRadio(2)">Não
+            </div>
+            <br>
+            <br>
+            <input name="Submit" type="submit" id="submit" form="formulario1" value="Enviar">
+            <input name="Reset" type="reset" id="reset" form="formulario1" value="Limpar" onclick="return limpar()">
+        </div>
+    </form>
+    <hr>
+        <footer>
+            <p>Atividade 15 | Programação WEB | Análise e Desenvolvimento de Sistemas | FATEC SOROCABA</p>
+            <p>&copy; 2024 Franciele Rodrigues. Todos os direitos reservados.</p>
+            <a href="https://github.com/FrancieleSRodrigues"><img src="github.jpg" alt="ícone de acesso GitHub"></a>           
+            <a href="https://www.linkedin.com/in/franciele-srod/"><img src="linkedin.png" alt="ícone de acesso Linkedin"></a>           
+        </footer>
+</body>
+</html>
