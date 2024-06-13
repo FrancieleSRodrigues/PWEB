@@ -1,0 +1,201 @@
+body {
+    background: #ffff;
+    color: #000000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+    
+header{
+    padding-bottom: 60px;
+}
+
+#logotipo{
+    width: 15%;
+    height: 57px;
+    position: fixed;
+    cursor: pointer;
+}
+
+#usuario{
+    width: 67px;
+    height: 67px;
+    border-radius: 67px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sidebar {
+    width: 10%;
+    color: #000000;
+    position: fixed;
+    padding-top: 4%;
+}
+
+.content {
+    margin-left: 14%;
+    padding-left: 65px;
+    margin-top: 4%;
+    border-radius: 8px;
+}
+
+.header {
+    display:inline-block;
+    font-size: 21px;
+}
+
+.header h2{
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.box{
+    border-radius: 8px;
+    padding: 20px;
+    height: 340px;
+    min-width: calc(33.333% - 24px);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.box.pessoal { background-color: #CCEBED; }
+.box.trabalho { background-color: #EACCD2; }
+.box.estudo { background-color: #F1CDB9; }
+.add-task{
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    min-width: calc(33.333% - 24px);
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 100px;
+}
+
+.box h2 {
+    margin-top: 0;
+    text-align: center;
+}
+.task{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.task input {
+    margin-right: 10px;
+}
+
+.tarefa, .categorias, #home {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#hoje, #calendario{
+    width: 275px;
+    height: 50px;
+    border-radius: 8px;
+} 
+
+.categorias span {
+    display: block;
+    margin: auto;
+}
+
+.categorias span.color {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.color-pessoal { background-color: #CCEBED; }
+.color-trabalho { background-color: #EACCD2; }
+.color-estudo { background-color: #F1CDB9; }
+
+.box-actions{
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+#P_task_check{
+    width: 35px;
+    height: 35px;
+}
+
+.box-content{
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.box-content label{
+    display: block;
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#completa{
+    background-color: #424040;
+}
+
+form{
+    width: calc(100%-sidebar);
+    background-color: #F1F1F1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.itemForm{
+    margin: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+#titulo, #descricao{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 5px;
+    border: 0px solid #F1F1F1;
+}
+
+#demaisItens, #btn_save{
+    display: flex;
+    justify-content: center;
+}
+
+#categoria, #vencimento, #prioridade, #notificacao{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prioridade input, #notificacao input{
+    height: 20px;
+    width: 20px;
+}
